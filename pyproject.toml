@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "keywordminer-engageai"
+version = "0.1.0"
+description = ""
+authors = ["Ahmet Çağatay Savaşlı <cagatay.savasli@ozu.edu.tr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.3"
+scikit-learn = "^1.5.2"
+gensim = "^4.3.3"
+transformers = "^4.46.3"
+torch = "^2.5.1"
+gnews = "^0.3.9"
+jupyter = "^1.1.1"
+googlenews = "^1.6.15"
+certifi = "^2024.8.30"
+lxml-html-clean = "^0.4.1"
+dnspython = "^2.7.0"
+newspaper3k = "^0.2.8"
+googlenewsdecoder = "^0.1.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

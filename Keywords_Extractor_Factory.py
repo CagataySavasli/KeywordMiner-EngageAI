@@ -6,9 +6,20 @@ import torch
 from collections import defaultdict
 import nltk
 import re
+from nltk.stem import WordNetLemmatizer
+
+import ssl
+import urllib.request
+
+# SSL doğrulamasını atlamak için:
+ssl._create_default_https_context = ssl._create_unverified_context
 
 nltk.download('stopwords')
 stop_words = set(stopwords.words('english'))
+
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+lemmatizer = WordNetLemmatizer()
 
 def keyword_extractor_factory(*args):
     if args[0] == "TF-IDF":
